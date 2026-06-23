@@ -472,32 +472,27 @@
 
         <section style="padding: 1.5rem; background: rgba(var(--primary-blue-rgb, 74, 144, 226), 0.05); border-radius: 16px; margin-bottom: 2rem;">
             <h3 style="margin-top: 0; color: var(--primary-blue);">Prénom et nom</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
-                <div class="vocab-card" onclick="speak('Prénom')">
-                    <div class="vocab-image">📝</div>
-                    <h3>Prénom</h3>
-                    <p class="translation">First name</p>
-                </div>
-                <div class="vocab-card" onclick="speak('Nom')">
-                    <div class="vocab-image">🏷️</div>
-                    <h3>Nom</h3>
-                    <p class="translation">Last name / Surname</p>
-                </div>
-            </div>
-            <p style="margin: 0.5rem 0 0; color: #333;">
-                <strong>Exemple:</strong> <em>Marie Curie</em>
-                <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Marie Curie')">🔊</span><br>
-                Prénom: <strong>Marie</strong> &nbsp;&nbsp; Nom: <strong>Curie</strong>
+            <p style="margin: 0.5rem 0 0.5rem; color: #333;">
+                <strong>Prénom</strong> = first name<br>
+                <strong>pray-noh</strong> <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Prénom')">🔊</span>
             </p>
-            <div class="example-grid" style="margin-top: 1rem;">
-                <div class="example-item" onclick="speak('Quel est votre prénom et nom de famille')">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <span class="french">Quel est votre prénom et nom de famille?</span>
-                        <span class="badge" style="background: var(--accent-green); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: bold;">FORMAL</span>
-                    </div>
-                    <span class="english">What is your full name?</span>
-                </div>
-            </div>
+            <p style="margin: 0.5rem 0 0.5rem; color: #333;">
+                <strong>Nom</strong> = last name / surname<br>
+                <strong>noh</strong> <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Nom')">🔊</span>
+            </p>
+            <p style="margin: 0.5rem 0 0; color: #333;">
+                <strong>Exemple:</strong> <em>Marie Curie</em><br>
+                Prénom: <strong>Marie</strong> &nbsp;&nbsp; Nom: <strong>Curie</strong>
+                <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Marie Curie')">🔊</span>
+            </p>
+            <p style="margin: 0.5rem 0 0; color: #333;">
+                <strong>Example:</strong> <em>Jean Reno</em><br>
+                Prénom: <strong>Jean</strong> &nbsp;&nbsp; Nom: <strong>Reno</strong>
+                <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Jean Reno')">🔊</span>
+            </p>
+            <p style="margin: 0.5rem 0 0; color: #333;">
+                Use this to ask someone for their full name: <strong>Quel est votre prénom et nom de famille ?</strong>
+            </p>
         </section>
 
         <section class="content-section">
@@ -942,14 +937,14 @@
                                 Paul. Nice to meet you, Madam.)</span>
                         </div>
 
-                        <div onclick="speak('Moi de même, Monsieur.', 'female')" class="example-item"
+                        <div onclick="speak('Ravie de faire votre connaissance aussi, Monsieur.', 'female')" class="example-item"
                             style="flex-direction: row; align-items: center; gap: 15px; padding: 10px; border: none; background: rgba(233, 30, 99, 0.05);">
                             <div
                                 style="background: #e91e63; color: white; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
                                 S</div>
                             <div style="flex-grow: 1;">
                                 <p style="margin: 0; font-weight: 600; color: #e91e63; font-size: 0.8rem;">Sophie</p>
-                                <p style="margin: 0; font-size: 1.05rem;">Moi de même, Monsieur.</p>
+                                <p style="margin: 0; font-size: 1.05rem;">Ravie de faire votre connaissance aussi, Monsieur.</p>
                             </div>
                             <span style="color: var(--text-muted); font-size: 0.9rem; font-style: italic;">(Nice to meet
                                 you too, Sir.)</span>
