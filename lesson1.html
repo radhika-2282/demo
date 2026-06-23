@@ -472,23 +472,22 @@
 
         <section style="padding: 1.5rem; background: rgba(var(--primary-blue-rgb, 74, 144, 226), 0.05); border-radius: 16px; margin-bottom: 2rem;">
             <h3 style="margin-top: 0; color: var(--primary-blue);">Prénom et nom</h3>
-            <p style="margin: 0.5rem 0 0.5rem; color: #333;">
-                <strong>Prénom</strong> = first name<br>
-                <strong>pray-noh</strong> <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Prénom')">🔊</span>
-            </p>
-            <p style="margin: 0.5rem 0 0.5rem; color: #333;">
-                <strong>Nom</strong> = last name / surname<br>
-                <strong>noh</strong> <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Nom')">🔊</span>
-            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
+                <div class="vocab-card" onclick="speak('Prénom')">
+                    <div class="vocab-image">📝</div>
+                    <h3>Prénom</h3>
+                    <p class="translation">First name</p>
+                </div>
+                <div class="vocab-card" onclick="speak('Nom')">
+                    <div class="vocab-image">📛</div>
+                    <h3>Nom</h3>
+                    <p class="translation">Last name / Surname</p>
+                </div>
+            </div>
             <p style="margin: 0.5rem 0 0; color: #333;">
-                <strong>Exemple:</strong> <em>Marie Curie</em><br>
+                <strong>Exemple:</strong> <em>Marie Curie</em>
+                <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Marie Curie')">🔊</span><br>
                 Prénom: <strong>Marie</strong> &nbsp;&nbsp; Nom: <strong>Curie</strong>
-                <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Marie Curie')">🔊</span>
-            </p>
-            <p style="margin: 0.5rem 0 0; color: #333;">
-                <strong>Example:</strong> <em>Jean Reno</em><br>
-                Prénom: <strong>Jean</strong> &nbsp;&nbsp; Nom: <strong>Reno</strong>
-                <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Jean Reno')">🔊</span>
             </p>
             <p style="margin: 0.5rem 0 0; color: #333;">
                 Use this to ask someone for their full name: <strong>Quel est votre prénom et nom de famille ?</strong>
