@@ -479,7 +479,7 @@
                     <p class="translation">First name</p>
                 </div>
                 <div class="vocab-card" onclick="speak('Nom')">
-                    <div class="vocab-image">📛</div>
+                    <div class="vocab-image">🏷️</div>
                     <h3>Nom</h3>
                     <p class="translation">Last name / Surname</p>
                 </div>
@@ -489,9 +489,15 @@
                 <span style="color: var(--primary-blue); cursor: pointer;" onclick="speak('Marie Curie')">🔊</span><br>
                 Prénom: <strong>Marie</strong> &nbsp;&nbsp; Nom: <strong>Curie</strong>
             </p>
-            <p style="margin: 0.5rem 0 0; color: #333;">
-                Use this to ask someone for their full name: <strong>Quel est votre prénom et nom de famille ?</strong>
-            </p>
+            <div class="example-grid" style="margin-top: 1rem;">
+                <div class="example-item" onclick="speak('Quel est votre prénom et nom de famille')">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="french">Quel est votre prénom et nom de famille?</span>
+                        <span class="badge" style="background: var(--accent-green); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: bold;">FORMAL</span>
+                    </div>
+                    <span class="english">What is your full name?</span>
+                </div>
+            </div>
         </section>
 
         <section class="content-section">
